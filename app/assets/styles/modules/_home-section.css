@@ -1,0 +1,17 @@
+.home-section {
+  position: relative;
+
+  &__content {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &__text {
+      font-family: 'Lobster', cursive;
+      font-size: 3.2rem;
+      color: white;
+    }
+  }
+}
