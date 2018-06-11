@@ -21,10 +21,14 @@
     <!-- end of navbar -->
     <!-- home section -->
     <div class="home-section">
-      <img src="assets/images/home_pic-large2.png" alt="racines d'un arbre">
+      <picture>
+        <source srcset="assets/images/home_pic_xl.png 1920w" media="(min-width: 1200px)">
+        <img srcset="assets/images/home_pic_xs.png 530w" alt="racines d'un arbre">
+      </picture>
       <div class="home-section__content">
         <img class="home-section__content__logo" src="assets/images/logo_placeholder.png" alt="Logo gwezenn elagage">
         <p class="home-section__content__text">Au service de vos arbres</p>
+        <h4 class="home-section__content__button">Contacter</h4>
       </div>
     </div>
     <!-- end of home section -->
