@@ -2,6 +2,8 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Gwezenn Elagage</title>
     <link rel="stylesheet" href="temp/styles/styles.css">
     <!-- font for title -->
@@ -22,13 +24,16 @@
     <!-- home section -->
     <div class="home-section">
       <picture>
-        <source srcset="assets/images/home_pic_xl.png 1920w" media="(min-width: 1200px)">
-        <img srcset="assets/images/home_pic_xs.png 530w" alt="racines d'un arbre">
+        <source srcset="assets/images/home_large.png 1920w" media="(min-width: 1380px)">
+        <source srcset="assets/images/home_medium.png 1380w" media="(min-width: 990px)">
+        <source srcset="assets/images/home_small.png 990w" media="(min-width: 640px)">
+        <img class="home-section__image"srcset="assets/images/home_smaller.png 640w" alt="forêt">
       </picture>
       <div class="home-section__content">
-        <img class="home-section__content__logo" src="assets/images/logo_placeholder.png" alt="Logo gwezenn elagage">
-        <p class="home-section__content__text">Au service de vos arbres</p>
-        <h4 class="home-section__content__button">Contacter</h4>
+        <img class="home-section__content__logo" src="assets/images/logo_placeholder.png" alt="logo gwezenn elagage">
+        <h3 class="home-section__content__text">Au service de vos arbres</h3>
+        <a href="#" class="home-section__content__btn">Contacter</a>
+
       </div>
     </div>
     <!-- end of home section -->
@@ -39,7 +44,7 @@
     <p>Au sein de cette société évolue un binôme de deux professionnels diplômés
       (contrat de spécialisation de tailles et soins des arbres).</p>
     <p>Intervenant sur la Bretagne Camille et Jérôme vous proposent un service de
-      qualité dans le respect de vos arbres et de vos  problématiques. </p>
+      qualité dans le respect de vos arbres et de vos  problématiques. </p> -->
     <img src="assets/images/broyeur_dechets.jpg" alt="évacuation des déchets">
     <p>Nous nous occupons également de faire l’évacuation de vos déchets</p>
     <!-- end of about section -->

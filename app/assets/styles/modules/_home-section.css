@@ -1,6 +1,10 @@
 .home-section {
   position: relative;
 
+  &__image {
+    display: block;
+  }
+
   &__content {
     text-align: center;
     width: 100%;
@@ -9,38 +13,49 @@
     transform: translateY(-50%);
 
     &__logo {
-      width: 90%;
+      width: 250px;
+
+      @mixin atSmall {
+        width: 450px;
+      }
+
+      @mixin atMedium {
+        width: 500px;
+      }
 
       @mixin atLarge {
-        max-width: 500px;
+        width: 500px;
       }
     }
 
     &__text {
       margin-top: 1rem;
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
       font-family: 'Lobster', cursive;
-      font-size: 4.8rem;
+      font-size: 1.5rem;
       color: white;
+      text-shadow: 1px 1px 1px black;
+
+      @mixin atSmall {
+        font-size: 1.8rem;
+      }
+
+      @mixin atMedium {
+        font-size: 2.2rem;
+      }
 
       @mixin atLarge {
-        font-size: 3.5rem;
-        margin-bottom: 2rem;
+        font-size: 2.8rem;
       }
     }
 
-    &__button {
-      font-size: 4.8rem;
-      color: white;
-      background: #8ECC4E;
+    &__btn {
       display: inline;
-      padding: 0.5rem 1.5rem;
-      border: white 0.4rem solid;
-
-      @mixin atLarge {
-        font-size: 1.8rem;
-        border: white 0.2rem solid;
-      }
+      padding: 0.4rem 1rem;
+      background-color: $colorAccent;
+      color: white;
+      border: 1px white solid;
+      box-shadow: 1px 2px 10px black;
     }
   }
 }

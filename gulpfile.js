@@ -8,13 +8,13 @@ cssimport = require('postcss-import'),
 mixins = require('postcss-mixins'),
 browserSync = require('browser-sync').create();
 
-gulp.task('default', function() {
-  console.log('created a gulp tasks.');
-});
-
-gulp.task('html', function() {
-  console.log("something useful for html");
-});
+// gulp.task('default', function() {
+//   console.log('created a gulp tasks.');
+// });
+//
+// gulp.task('html', function() {
+//   console.log("something useful for html");
+// });
 
 /**
  * Compile css.
@@ -27,7 +27,7 @@ gulp.task('styles', function() {
 
 /**
 * this task watch for change in specified files,
-* and trigger another task if change is made
+* and then trigger another task.
 */
 gulp.task('watch', function() {
 
