@@ -14,7 +14,6 @@
 
     &__logo {
       width: 250px;
-
       @mixin atSmall {
         width: 450px;
       }
