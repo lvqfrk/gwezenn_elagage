@@ -345,6 +345,8 @@ template {
 
 /*green*/
 
+/*fonts*/
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
@@ -358,6 +360,97 @@ img {
 a {
   text-decoration: none;
 }
+
+li {
+  list-style: none;
+}
+
+.header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.4);
+  box-shadow: 1px 1px 5px black;
+}
+
+.header__content{
+    margin: 0.4rem auto;
+    max-width: 980px;
+  }
+
+.header__content__title {
+      margin-left: 1em;
+      display: inline;
+      font-size: 1.4rem;
+      color: white;
+      font-family: 'Lobster', cursive;
+    }
+
+.header__content__menu-btn {
+      float: right;
+      margin-top: 0.2rem;
+      margin-right: 0.5rem;
+  }
+
+.header__content__menu-btn div {
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        margin: 0 0 6px 0;
+    }
+
+@media (min-width: 800px) {
+
+.header__content__menu-btn {
+      display: none
+  }
+  }
+
+.header__content__navbar {
+      float: right;
+      display: none;
+      padding-right: 0.5rem;
+    }
+
+.header__content__navbar li {
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+.header__content__navbar--is-visible {
+        display: block;
+        position: absolute;
+        top: 2.53rem;
+        right: 0;
+        padding-right: 0.5rem;
+        text-align: right;
+        background: rgba(0,0,0, 0.4);
+        width: 100%;
+      }
+
+.header__content__navbar--is-visible a {
+          color: white;
+          text-align: right;
+        }
+
+@media (min-width: 800px) {
+
+.header__content__navbar {
+        display: block;
+        margin-right: 2rem;
+        margin-top: 5px
+    }
+        .header__content__navbar li {
+          display: inline;
+        }
+          .header__content__navbar li a {
+            color: white;
+            font-family: 'Lobster Two', cursive;
+            font-size: 1.2rem;
+            margin-left: 1rem;
+          }
+  }
 
 .home-section {
   position: relative;

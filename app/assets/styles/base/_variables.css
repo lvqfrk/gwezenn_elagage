@@ -2,3 +2,9 @@
 $colorPrimary: #996B5E;
 /*green*/
 $colorAccent: #8ECC4E;
+
+/*fonts*/
+$fontLobster: 'Lobster', cursive;
+$fontLobsterTwo: 'Lobster Two', cursive;
+
+$headerColor: rgba(0,0,0, 0.4);

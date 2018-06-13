@@ -6,7 +6,8 @@ cssvars = require('postcss-simple-vars'),
 nested = require('postcss-nested'),
 cssimport = require('postcss-import'),
 mixins = require('postcss-mixins'),
-browserSync = require('browser-sync').create();
+browserSync = require('browser-sync').create()
+webpack = require('webpack');
 
 // gulp.task('default', function() {
 //   console.log('created a gulp tasks.');
@@ -42,10 +43,28 @@ gulp.task('watch', function() {
   });
   watch('./app/assets/styles/**/*.css', function() {
     gulp.start('cssInject');
-  })
+  });
+
+  watch('./app/assets/scripts/**/*.js', function() {
+    gulp.start('scriptsRefresh');
+  });
 });
 
 gulp.task('cssInject', ['styles'], function() {
   return gulp.src('./app/temp/styles/styles.css')
     .pipe(browserSync.stream());
 });
+
+gulp.task('scripts', function(callback) {
+  webpack(require('./webpack.config.js'), function(err, stats) {
+    if (err) {
+      console.log(err.toString());
+    }
+    console.log(stats.toString());
+    callback();
+  });
+});
+
+gulp.task('scriptsRefresh', ['scripts'], function() {
+  browserSync.reload();
+})

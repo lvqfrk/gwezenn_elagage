@@ -1,0 +1,78 @@
+.header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background-color: $headerColor;
+  box-shadow: 1px 1px 5px black;
+
+  &__content{
+    margin: 0.4rem auto;
+    max-width: 980px;
+    &__title {
+      margin-left: 1em;
+      display: inline;
+      font-size: 1.4rem;
+      color: white;
+      font-family: $fontLobster;
+    }
+
+    &__menu-btn {
+      float: right;
+      margin-top: 0.2rem;
+      margin-right: 0.5rem;
+      div {
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        margin: 0 0 6px 0;
+    }
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
+    &__navbar {
+      float: right;
+      display: none;
+      padding-right: 0.5rem;
+
+
+      li {
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      &--is-visible {
+        display: block;
+        position: absolute;
+        top: 2.53rem;
+        right: 0;
+        padding-right: 0.5rem;
+        text-align: right;
+        background: $headerColor;
+        width: 100%;
+        a {
+          color: white;
+          text-align: right;
+        }
+      }
+
+      @mixin atMedium {
+        display: block;
+        margin-right: 2rem;
+        margin-top: 5px;
+        li {
+          display: inline;
+          a {
+            color: white;
+            font-family: $fontLobsterTwo;
+            font-size: 1.2rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
