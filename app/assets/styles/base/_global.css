@@ -15,3 +15,8 @@ a {
 li {
   list-style: none;
 }
+
+.clear-float {
+  display: block;
+  clear: both;
+}

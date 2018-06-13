@@ -1,0 +1,80 @@
+.about {
+  max-width: 980px;
+  margin-top: 4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  @mixin atMedium {
+    margin: 4rem auto 4rem auto;
+  }
+
+  &__title {
+    font-family: $fontLobster;
+    font-size: 1.8rem;
+    text-align: center;
+    color: $colorAccent;
+    margin-bottom: 1rem;
+
+    @mixin atSmall {
+      margin-bottom: 4rem;
+    }
+
+    @mixin atLarge {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__first-p-atSmaller {
+
+    margin-bottom: 1rem;
+    @mixin atSmall {
+      display: none;
+    }
+  }
+
+  &__first-p-atSmall {
+    display: none;
+
+    @mixin atSmall {
+      display: block;
+    }
+  }
+
+
+  &__p-centered {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  p {
+    font-family: $fontLobsterTwo;
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.3rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__first-pic {
+    display: inline;
+    float: left;
+    margin-bottom: 2rem;
+
+    @mixin atSmall{
+      margin-right: 2rem;
+      max-width: 200px;
+    }
+
+    @mixin  atMedium {
+      max-width: 400px;
+    }
+
+  }
+}

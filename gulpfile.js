@@ -9,14 +9,6 @@ mixins = require('postcss-mixins'),
 browserSync = require('browser-sync').create()
 webpack = require('webpack');
 
-// gulp.task('default', function() {
-//   console.log('created a gulp tasks.');
-// });
-//
-// gulp.task('html', function() {
-//   console.log("something useful for html");
-// });
-
 /**
  * Compile css.
  */
@@ -50,11 +42,17 @@ gulp.task('watch', function() {
   });
 });
 
+/**
+* this method inject css change without reload the pages.
+*/
 gulp.task('cssInject', ['styles'], function() {
   return gulp.src('./app/temp/styles/styles.css')
     .pipe(browserSync.stream());
 });
 
+/**
+* refresh the page if there is javascript changes.
+*/
 gulp.task('scripts', function(callback) {
   webpack(require('./webpack.config.js'), function(err, stats) {
     if (err) {
