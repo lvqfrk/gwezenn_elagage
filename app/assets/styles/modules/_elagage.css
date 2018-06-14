@@ -1,0 +1,31 @@
+.elagage {
+  background: #513c30;
+  color: white;
+  font-family: $fontLobsterTwo;
+  margin-top: 4rem;
+  padding-top: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  &__content {
+    max-width: 980px;
+    margin: auto;
+  }
+
+  p {
+    font-family: $fontLobsterTwo;
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.3rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.5rem;
+    }
+  }
+
+}

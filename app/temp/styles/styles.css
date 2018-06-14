@@ -370,6 +370,37 @@ li {
   clear: both;
 }
 
+.global__title {
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #9fb70d;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 530px) {
+
+.global__title {
+    margin-bottom: 4rem
+}
+  }
+
+@media (min-width: 1010px) {
+
+.global__title {
+    font-size: 2.2rem
+}
+  }
+
+.global__p-centered {
+    font-weight: bold;
+    text-align: center;
+}
+
+.global__p-centered--green {
+      color: #9fb70d;
+    }
+
 .header {
   position: absolute;
   z-index: 2;
@@ -532,7 +563,7 @@ li {
 .home-section__content__btn {
       display: inline;
       padding: 0.4rem 1rem;
-      background-color: #8ECC4E;
+      background-color: #9fb70d;
       color: white;
       border: 1px white solid;
       box-shadow: 1px 2px 10px black;
@@ -550,28 +581,6 @@ li {
 .about {
     margin: 4rem auto 4rem auto
 }
-  }
-
-.about__title {
-    font-family: 'Lobster', cursive;
-    font-size: 1.8rem;
-    text-align: center;
-    color: #8ECC4E;
-    margin-bottom: 1rem;
-  }
-
-@media (min-width: 530px) {
-
-.about__title {
-      margin-bottom: 4rem
-  }
-  }
-
-@media (min-width: 1010px) {
-
-.about__title {
-      font-size: 2.2rem
-  }
   }
 
 .about__first-p-atSmaller {
@@ -595,11 +604,6 @@ li {
 .about__first-p-atSmall {
       display: block
   }
-  }
-
-.about__p-centered {
-    font-weight: bold;
-    text-align: center;
   }
 
 .about p {
@@ -648,5 +652,60 @@ li {
 .about__first-pic {
       max-width: 400px
 
+  }
+  }
+
+.elagage {
+  background: #513c30;
+  color: white;
+  font-family: 'Lobster Two', cursive;
+  margin-top: 4rem;
+  padding-top: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+}
+
+.elagage__row {
+    width: 100%;
+    text-align: center;
+  }
+
+.elagage__col {
+    max-width: 40%;
+  }
+
+.elagage img {
+    width: auto;
+    height: auto;
+  }
+
+.elagage__content {
+    max-width: 980px;
+    margin: auto;
+  }
+
+.elagage p {
+    font-family: 'Lobster Two', cursive;
+  }
+
+@media (min-width: 530px) {
+
+.elagage p {
+      font-size: 1.2rem
+  }
+  }
+
+@media (min-width: 800px) {
+
+.elagage p {
+      font-size: 1.3rem
+  }
+  }
+
+@media (min-width: 1010px) {
+
+.elagage p {
+      font-size: 1.5rem
   }
   }
