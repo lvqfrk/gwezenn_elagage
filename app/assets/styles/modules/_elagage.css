@@ -6,10 +6,28 @@
   padding-top: 3rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-bottom: 5rem;
+
 
   &__content {
     max-width: 980px;
     margin: auto;
+  }
+
+  &__row {
+    width: 100%;
+    margin: auto;
+  }
+
+  &__col {
+    float: left;
+    width: 46%;
+    margin: 2% 2%;
+
+    @mixin atSmall {
+      width: 23%;
+      margin: 1% 1%;
+    }
   }
 
   p {
@@ -27,5 +45,4 @@
       font-size: 1.5rem;
     }
   }
-
 }

@@ -3,7 +3,6 @@ body {
   color: #333;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -38,10 +37,29 @@ li {
   }
 }
 
-.global__p-centered {
+.global {
+  &__p-centered {
+      font-weight: bold;
+      text-align: center;
+      &--green {
+        color: $colorAccent;
+      }
+  }
+
+  &__important {
     font-weight: bold;
-    text-align: center;
-    &--green {
-      color: $colorAccent;
+    color: $colorAccent;
+  }
+
+  &__flex-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__child{
+      display: inline-block;
     }
+  }
+
+
 }
