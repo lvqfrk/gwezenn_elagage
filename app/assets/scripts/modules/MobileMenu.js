@@ -14,8 +14,6 @@ class MobileMenu {
 
   toggleMenu() {
     this.menuContent.toggleClass("header__content__navbar--is-visible");
-    console.log("btn is clicked !!!!!!!!!!");
-
   }
 }
 

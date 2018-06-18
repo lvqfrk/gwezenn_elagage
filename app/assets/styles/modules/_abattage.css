@@ -1,0 +1,38 @@
+.abattage {
+  font-family: $fontLobsterTwo;
+  padding-top: 4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 5rem;
+  background: #7F7772;
+  color: white;
+
+  &__content {
+    max-width: 980px;
+    margin: auto;
+  }
+
+  &__col {
+    margin-top: 2rem;
+    @mixin atSmall {
+      float: left;
+      margin: 1%;
+      width: 46%;
+    }
+  }
+  p {
+    font-family: $fontLobsterTwo;
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.3rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.5rem;
+    }
+  }
+}
