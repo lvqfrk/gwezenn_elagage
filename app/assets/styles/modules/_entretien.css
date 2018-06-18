@@ -1,0 +1,26 @@
+.entretien {
+  padding-bottom: 4rem;
+
+  &__content {
+    max-width: 980px;
+    margin: auto;
+  }
+
+  p {
+    font-family: $fontLobsterTwo;
+    font-weight: bold;
+    text-align: center;
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.3rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.5rem;
+    }
+  }
+}

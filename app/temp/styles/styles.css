@@ -778,3 +778,95 @@ li {
       font-size: 1.5rem
   }
   }
+
+.entretien {
+  padding-bottom: 4rem;
+}
+
+.entretien__content {
+    max-width: 980px;
+    margin: auto;
+  }
+
+.entretien p {
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+    text-align: center;
+  }
+
+@media (min-width: 530px) {
+
+.entretien p {
+      font-size: 1.2rem
+  }
+  }
+
+@media (min-width: 800px) {
+
+.entretien p {
+      font-size: 1.3rem
+  }
+  }
+
+@media (min-width: 1010px) {
+
+.entretien p {
+      font-size: 1.5rem
+  }
+  }
+
+.contact {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  background: black;
+}
+
+.contact p {
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+
+@media (min-width: 530px) {
+
+.contact p {
+      font-size: 1.2rem
+  }
+  }
+
+@media (min-width: 800px) {
+
+.contact p {
+      font-size: 1.3rem
+  }
+  }
+
+@media (min-width: 1010px) {
+
+.contact p {
+      font-size: 1.5rem
+  }
+  }
+
+.contact__content {
+    max-width: 980px;
+    margin: auto;
+  }
+
+.contact__content__col {
+      text-align: center;
+      width: 50%;
+      float: left;
+    }
+
+.contact__content__col img {
+        max-width: 180px;
+      }
+
+@media (min-width: 800px) {
+
+.contact__content__col {
+        width: 25%
+    }
+  }
