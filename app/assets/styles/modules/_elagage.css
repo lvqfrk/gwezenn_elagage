@@ -1,5 +1,5 @@
 .elagage {
-  background: #513c30;
+  background: $colorMaroon;
   color: white;
   font-family: $fontLobsterTwo;
   margin-top: 4rem;

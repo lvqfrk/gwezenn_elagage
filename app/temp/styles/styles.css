@@ -417,7 +417,7 @@ li {
     }
 
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   width: 100%;
   background-color: rgba(0,0,0, 0.4);
@@ -672,7 +672,7 @@ li {
   }
 
 .elagage {
-  background: #513c30;
+  background: #635054;
   color: white;
   font-family: 'Lobster Two', cursive;
   margin-top: 4rem;
