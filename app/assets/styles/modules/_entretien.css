@@ -4,6 +4,7 @@
   &__content {
     max-width: 980px;
     margin: auto;
+    padding: 0 8px;
   }
 
   p {

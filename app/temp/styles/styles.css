@@ -343,6 +343,8 @@ template {
 
 /* maroon */
 
+/* $colorPrimary: #4B5126; */
+
 /*green*/
 
 /*fonts*/
@@ -417,7 +419,7 @@ li {
     }
 
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   width: 100%;
   background-color: rgba(0,0,0, 0.4);
@@ -672,7 +674,7 @@ li {
   }
 
 .elagage {
-  background: #513c30;
+  background: #362d30;
   color: white;
   font-family: 'Lobster Two', cursive;
   margin-top: 4rem;
@@ -786,6 +788,7 @@ li {
 .entretien__content {
     max-width: 980px;
     margin: auto;
+    padding: 0 8px;
   }
 
 .entretien p {
