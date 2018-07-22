@@ -1,5 +1,7 @@
 .entretien {
+  padding-top: 4rem;
   padding-bottom: 4rem;
+  background-color: white;
 
   &__content {
     max-width: 980px;

@@ -1,12 +1,31 @@
 .about {
-  max-width: 980px;
-  margin-top: 4rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-bottom: 6rem;
+  background-color: white;
+
+  margin-top: 380px;
+
+  @mixin atSmall {
+    margin-top: 450px;
+  }
 
   @mixin atMedium {
-    margin: 4rem auto 8rem auto;
+    margin-top: 480px;
+  }
+
+  @mixin atLarge {
+    margin-top: 620px;
+  }
+
+  &__content {
+    max-width: 980px;
+    padding-top: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 6rem;
+
+    @mixin atMedium {
+      margin: 0 auto 0 auto;
+      padding: 4rem 0 8rem 0;
+    }
   }
 
   &__first-p-atSmaller {

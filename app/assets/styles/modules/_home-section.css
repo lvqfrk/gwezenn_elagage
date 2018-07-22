@@ -1,5 +1,7 @@
 .home-section {
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: -1;
 
   &__image {
     display: block;
@@ -9,13 +11,18 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
+
+    @mixin atMedium {
+      top: 50%;
+    }
+
 
     &__logo {
       width: 250px;
       @mixin atSmall {
-        width: 450px;
+        width: 300px;
       }
 
       @mixin atMedium {
