@@ -11,8 +11,12 @@
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 30%;
+    top: 50%;
     transform: translateY(-50%);
+
+    @mixin atSmall {
+      top: 30%;
+    }
 
     @mixin atMedium {
       top: 50%;
