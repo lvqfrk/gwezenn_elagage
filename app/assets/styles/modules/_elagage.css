@@ -1,5 +1,9 @@
 .elagage {
+<<<<<<< HEAD
   background: $colorMaroon;
+=======
+  background: #362d30;
+>>>>>>> f622d806e501ae9f1c31ed20602fe967c44ff1d0
   color: white;
   font-family: $fontLobsterTwo;
   padding-top: 7rem;

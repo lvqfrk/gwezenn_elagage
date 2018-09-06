@@ -1,6 +1,11 @@
 /* maroon */
+<<<<<<< HEAD
 $colorPrimary: #4B5126;
 $colorMaroon: #635054;
+=======
+/* $colorPrimary: #4B5126; */
+$colorPrimary: #362d30;
+>>>>>>> f622d806e501ae9f1c31ed20602fe967c44ff1d0
 /*green*/
 $colorAccent: #9fb70d;
 

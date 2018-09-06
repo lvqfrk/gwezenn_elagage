@@ -343,6 +343,8 @@ template {
 
 /* maroon */
 
+/* $colorPrimary: #4B5126; */
+
 /*green*/
 
 /*fonts*/
@@ -418,7 +420,10 @@ li {
 
 .header {
   position: fixed;
+<<<<<<< HEAD
   top: 0;
+=======
+>>>>>>> f622d806e501ae9f1c31ed20602fe967c44ff1d0
   z-index: 2;
   width: 100%;
   background-color: rgba(0,0,0, 0.4);
@@ -717,7 +722,11 @@ li {
   }
 
 .elagage {
+<<<<<<< HEAD
   background: #635054;
+=======
+  background: #362d30;
+>>>>>>> f622d806e501ae9f1c31ed20602fe967c44ff1d0
   color: white;
   font-family: 'Lobster Two', cursive;
   padding-top: 7rem;
@@ -832,6 +841,7 @@ li {
 .entretien__content {
     max-width: 980px;
     margin: auto;
+    padding: 0 8px;
   }
 
 .entretien p {
