@@ -343,8 +343,6 @@ template {
 
 /* maroon */
 
-/* $colorPrimary: #4B5126; */
-
 /*green*/
 
 /*fonts*/
@@ -420,10 +418,6 @@ li {
 
 .header {
   position: fixed;
-<<<<<<< HEAD
-  top: 0;
-=======
->>>>>>> f622d806e501ae9f1c31ed20602fe967c44ff1d0
   z-index: 2;
   width: 100%;
   background-color: rgba(0,0,0, 0.4);
@@ -509,12 +503,6 @@ li {
           }
   }
 
-.home-section {
-  position: fixed;
-  top: 0;
-  z-index: -1;
-}
-
 .home-section__image {
     display: block;
   }
@@ -523,7 +511,7 @@ li {
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 35%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -531,14 +519,14 @@ li {
 @media (min-width: 530px) {
 
 .home-section__content {
-      top: 30%
+      top: 40%
   }
   }
 
 @media (min-width: 800px) {
 
 .home-section__content {
-      top: 50%
+      top: 35%
   }
   }
 
@@ -607,31 +595,10 @@ li {
     }
 
 .about {
+  /* background: url('/assets/images/about1.jpg') no-repeat  0 center fixed; */
+  /* background-size: cover; */
   background-color: white;
-
-  margin-top: 380px;
 }
-
-@media (min-width: 530px) {
-
-.about {
-    margin-top: 450px
-}
-  }
-
-@media (min-width: 800px) {
-
-.about {
-    margin-top: 480px
-}
-  }
-
-@media (min-width: 1010px) {
-
-.about {
-    margin-top: 620px
-}
-  }
 
 .about__content {
     max-width: 980px;
@@ -722,14 +689,11 @@ li {
   }
 
 .elagage {
-<<<<<<< HEAD
-  background: #635054;
-=======
-  background: #362d30;
->>>>>>> f622d806e501ae9f1c31ed20602fe967c44ff1d0
+  //background: #635054;
+  background: url('/assets/images/elagage_background.JPG') no-repeat  0 center fixed;
   color: white;
   font-family: 'Lobster Two', cursive;
-  padding-top: 7rem;
+  padding-top: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 5rem;
@@ -780,12 +744,13 @@ li {
   }
 
 .abattage {
+  background: url('/assets/images/abattage2.jpg') no-repeat  0 center fixed;
   font-family: 'Lobster Two', cursive;
   padding-top: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 5rem;
-  background: #7F7772;
+  //background: #7F7772;
   color: white;
 }
 

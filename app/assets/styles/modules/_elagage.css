@@ -1,12 +1,9 @@
 .elagage {
-<<<<<<< HEAD
-  background: $colorMaroon;
-=======
-  background: #362d30;
->>>>>>> f622d806e501ae9f1c31ed20602fe967c44ff1d0
+  //background: $colorMaroon;
+  background: url('/assets/images/elagage_background.JPG') no-repeat  0 center fixed;
   color: white;
   font-family: $fontLobsterTwo;
-  padding-top: 7rem;
+  padding-top: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 5rem;

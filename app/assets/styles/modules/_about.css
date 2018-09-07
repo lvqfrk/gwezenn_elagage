@@ -1,19 +1,7 @@
 .about {
+  /* background: url('/assets/images/about1.jpg') no-repeat  0 center fixed; */
+  /* background-size: cover; */
   background-color: white;
-
-  margin-top: 380px;
-
-  @mixin atSmall {
-    margin-top: 450px;
-  }
-
-  @mixin atMedium {
-    margin-top: 480px;
-  }
-
-  @mixin atLarge {
-    margin-top: 620px;
-  }
 
   &__content {
     max-width: 980px;

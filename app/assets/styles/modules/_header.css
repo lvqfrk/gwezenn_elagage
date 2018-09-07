@@ -1,9 +1,5 @@
 .header {
   position: fixed;
-<<<<<<< HEAD
-  top: 0;
-=======
->>>>>>> f622d806e501ae9f1c31ed20602fe967c44ff1d0
   z-index: 2;
   width: 100%;
   background-color: $headerColor;
