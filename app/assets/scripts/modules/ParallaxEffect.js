@@ -13,8 +13,8 @@ class ParallaxEffect {
   }
 
   parallaxEffect() {
-    this.backgroundElagage.parallax("center", 0.2, true);
-    this.backgroundAbattage.parallax("center",0.2, true);
+    this.backgroundElagage.parallax("center", 0.1, true);
+    this.backgroundAbattage.parallax("center",0.1, true);
   }
 }
 
