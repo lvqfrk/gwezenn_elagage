@@ -689,33 +689,62 @@ li {
   }
 
 .elagage {
+  background: #635054;
   //background: #635054;
-  background: url('/assets/images/elagage_background.JPG') no-repeat  0 center fixed;
   color: white;
   font-family: 'Lobster Two', cursive;
   padding-top: 4rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   padding-bottom: 5rem;
 }
+
+@media (min-width: 800px) {
+
+.elagage {
+    background: url('/assets/images/elagage_background.png') no-repeat 0 center fixed
+}
+  }
 
 .elagage__content {
     max-width: 980px;
     margin: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
-.elagage__col {
-    float: left;
-    width: 46%;
-    margin: 2% 2%;
+.elagage .scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 980px;
+  margin: auto;
+
+
+}
+
+.elagage .scrolling-wrapper .card {
+    flex: 0 0 auto;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
+
+.elagage .scrolling-wrapper .card img{
+      height: 15rem;
+      border-radius: 0.5rem;
+    }
 
 @media (min-width: 530px) {
 
-.elagage__col {
-      width: 23%;
-      margin: 1% 1%
+.elagage .scrolling-wrapper .card img{
+        height: 22rem
+    }
   }
+
+@media (min-width: 1010px) {
+
+.elagage .scrolling-wrapper .card img{
+        height: 25rem
+    }
   }
 
 .elagage p {
@@ -744,15 +773,21 @@ li {
   }
 
 .abattage {
-  background: url('/assets/images/abattage2.jpg') no-repeat  0 center fixed;
+  background: #7F7772;
   font-family: 'Lobster Two', cursive;
   padding-top: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 5rem;
-  //background: #7F7772;
   color: white;
 }
+
+@media (min-width: 800px) {
+
+.abattage {
+    background: url('/assets/images/abattage_background.png') no-repeat 0 center fixed
+}
+  }
 
 .abattage__content {
     max-width: 980px;

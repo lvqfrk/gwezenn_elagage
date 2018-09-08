@@ -1,11 +1,14 @@
 .abattage {
-  background: url('/assets/images/abattage2.jpg') no-repeat  0 center fixed;
+  background: #7F7772;
+  @mixin atMedium {
+    background: url('/assets/images/abattage_background.png') no-repeat 0 center fixed;
+
+  }
   font-family: $fontLobsterTwo;
   padding-top: 4rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 5rem;
-  //background: #7F7772;
   color: white;
 
   &__content {
