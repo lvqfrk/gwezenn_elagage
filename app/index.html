@@ -19,18 +19,18 @@
           <div></div>
         </div>
         <nav class="header__content__navbar">
-          <li><a href="#home">Accueil</a></li>
-          <li><a href="#about">Présentation</a></li>
-          <li><a href="#elagage">Elagage</a></li>
-          <li><a href="#abattage">Abattage</a></li>
-          <li><a href="#entretien">Entretien</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" id="home-link">Accueil</a></li>
+          <li><a href="#about" id="about-link">Présentation</a></li>
+          <li><a href="#elagage" id="elagage-link">Elagage</a></li>
+          <li><a href="#abattage" id="abattage-link">Abattage</a></li>
+          <li><a href="#entretien" id="entretien-link">Entretien</a></li>
+          <li><a href="#contact" id="contact-link">Contact</a></li>
         </nav>
       </div>
     </div>
     <!-- end of navbar -->
     <!-- home section -->
-    <div class="home-section" id="home">
+    <div class="home-section page-section" id="home" data-matching-link="#home-link">
       <picture class="home-section__picture">
         <source srcset="assets/images/home_large.png 1920w" media="(min-width: 1380px)">
         <source srcset="assets/images/home_medium.png 1380w" media="(min-width: 990px)">
@@ -45,7 +45,7 @@
     </div>
     <!-- end of home section -->
     <!-- about section -->
-    <section class="about" id="about">
+    <section class="about page-section" id="about" data-matching-link="#about-link">
       <div class="about__content">
         <h3 class="global__title about__title">Présentation</h3>
         <p class="about__first-p-atSmaller">Gwezenn Elagage est une jeune entreprise créer en 2016, situé en Centre
@@ -68,7 +68,7 @@
     </section>
     <!-- end of about section -->
     <!-- elagage section -->
-    <section class="elagage" id="elagage">
+    <section class="elagage page-section" id="elagage" data-matching-link="#elagage-link">
       <div class="elagage__content revealOnScroll">
         <h3 class="global__title elagage__title">Élagage</h3>
         <p>L'élagage consiste a orienter ou limiter le développement d'un arbre.
@@ -113,7 +113,7 @@
     </section>
     <!-- end of elagage section -->
     <!-- abattage section -->
-    <section class="abattage" id="abattage">
+    <section class="abattage page-section" id="abattage" data-matching-link="#abattage-link">
       <h3 class="global__title revealOnScroll">Abattage</h3>
       <div class="abattage__content revealOnScroll">
         <p><span class="global__important">Abattage classique :</span> consiste à couper un arbre directement au sol.</p>
@@ -132,7 +132,7 @@
     </section>
     <!-- end of abattage section -->
     <!-- Entretien section -->
-    <section class="entretien" id="entretien">
+    <section class="entretien page-section" id="entretien" data-matching-link="#entretien-link">
       <div class="entretien__content">
         <h3 class="global__title">Entretien</h3>
         <p>Nous vous proposons également des tailles d’arbustes, tonte de pelouses
@@ -141,7 +141,7 @@
     </section>
     <!-- end of entretien section -->
     <!-- contact section -->
-    <section class="contact" id="contact">
+    <section class="contact page-section" id="contact" data-matching-link="#contact-link">
       <div class="contact__content">
         <div class="contact__content__col">
           <img src="assets/images/logo_placeholder.png" alt="logo gwezenn elagage">

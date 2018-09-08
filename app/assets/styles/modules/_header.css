@@ -5,6 +5,16 @@
   background-color: $headerColor;
   box-shadow: 1px 1px 5px black;
 
+  &--dark {
+    background-color: $headerColorDark;
+    transition: ease-in-out 1.5s;
+  }
+
+  &--menu-is-active {
+    background-color: $headerColorDark;
+    transition: ease-in-out 0s;
+  }
+
   &__content{
     margin: 0.4rem auto;
     max-width: 980px;
@@ -51,11 +61,14 @@
         right: 0;
         padding-right: 0.5rem;
         text-align: right;
-        background: $headerColor;
+        background: $headerColorDark;
         width: 100%;
         a {
           color: white;
           text-align: right;
+          &.is-current-link{
+            color: $colorAccent;
+          }
         }
       }
 
@@ -70,6 +83,10 @@
             font-family: $fontLobsterTwo;
             font-size: 1.2rem;
             margin-left: 1rem;
+
+            &.is-current-link{
+              color: $colorAccent;
+            }
           }
         }
       }
