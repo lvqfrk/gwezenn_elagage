@@ -947,7 +947,6 @@ li {
 
 .reveal-item{
   opacity: 0;
-  transition: all 1.5s ease-out;
 }
 
 @media (min-width: 800px) {
@@ -962,4 +961,32 @@ li {
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
+    transition: all 1.5s ease-in;
+
+  }
+
+.reveal-item--from-left {
+  opacity: 0;
+  -webkit-transform: translateX(-4rem);
+          transform: translateX(-4rem);
+}
+
+.reveal-item--from-left--is-visible {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    transition: all 1.5s ease-in;
+  }
+
+.reveal-item--from-right {
+  opacity: 0;
+  -webkit-transform: translateX(4rem);
+          transform: translateX(4rem);
+}
+
+.reveal-item--from-right--is-visible {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    transition: all 1.5s ease-in;
   }
