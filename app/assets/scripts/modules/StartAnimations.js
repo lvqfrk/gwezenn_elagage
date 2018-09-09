@@ -33,10 +33,6 @@ class StartAnimations {
       that.catchWord.addClass('reveal-item--is-visible');
       that.contactBtn.addClass('reveal-item--is-visible');
       that.aboutFooter.addClass('reveal-item--is-visible');
-      // setTimeout(function () {
-      //   that.catchWord.addClass('reveal-item--is-visible');
-      //   that.contactBtn.addClass('reveal-item--is-visible');
-      // }, 500);
     });
   }
 }

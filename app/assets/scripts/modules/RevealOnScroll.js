@@ -4,12 +4,14 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 class RevealOnScroll {
   constructor(){
     this.itemToReveal = $('.revealOnScroll');
+    this.scrollingWrapper = $('.scrolling-wrapper');
     this.hideInitially();
     this.createWaypoints();
   }
 
   hideInitially() {
     this.itemToReveal.addClass("reveal-item");
+    this.scrollingWrapper.addClass("reveal-item");
   }
 
   createWaypoints() {
@@ -19,6 +21,17 @@ class RevealOnScroll {
         element: currentItem,
         handler: function() {
           $(currentItem).addClass("reveal-item--is-visible");
+        },
+        offset: "85%"
+      });
+    });
+
+    this.scrollingWrapper.each(function() {
+      var currentWrapper = this;
+      new Waypoint({
+        element: currentWrapper,
+        handler: function() {
+          $(currentWrapper).addClass("reveal-item--is-visible");
         },
         offset: "85%"
       });
