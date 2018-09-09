@@ -1,7 +1,7 @@
 .abattage {
   background: #7F7772;
   @mixin atMedium {
-    background: url('/assets/images/abattage_background.png') no-repeat 0 center fixed;
+    background: url('/assets/images/abattage_background.jpeg') no-repeat 0 center fixed;
 
   }
   font-family: $fontLobsterTwo;

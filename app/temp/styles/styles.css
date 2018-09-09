@@ -718,7 +718,7 @@ li {
 @media (min-width: 800px) {
 
 .elagage {
-    background: url('/assets/images/elagage_background.png') no-repeat 0 center fixed
+    background: url('/assets/images/elagage_background.jpeg') no-repeat 0 center fixed
 }
   }
 
@@ -803,7 +803,7 @@ li {
 @media (min-width: 800px) {
 
 .abattage {
-    background: url('/assets/images/abattage_background.png') no-repeat 0 center fixed
+    background: url('/assets/images/abattage_background.jpeg') no-repeat 0 center fixed
 }
   }
 
