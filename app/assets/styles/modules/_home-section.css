@@ -11,26 +11,36 @@
     transform: translateY(-50%);
 
     @mixin atSmall {
-      top: 40%;
+      top: 200px;
     }
 
-    @mixin atMedium {
+    /* @mixin atSmall640 {
       top: 35%;
+      transform: translateY(-50%);
+
+    } */
+
+    @mixin atMedium {
+      top: 25%;
+    }
+
+    @mixin atLarge {
+      top: 30%;
     }
 
 
     &__logo {
       width: 250px;
       @mixin atSmall {
-        width: 300px;
+        width: 250px;
       }
 
       @mixin atMedium {
-        width: 500px;
+        width: 300px;
       }
 
       @mixin atLarge {
-        width: 500px;
+        width: 400px;
       }
     }
 

@@ -537,14 +537,27 @@ li {
 @media (min-width: 530px) {
 
 .home-section__content {
-      top: 40%
+      top: 200px
   }
   }
+
+/* @mixin atSmall640 {
+      top: 35%;
+      transform: translateY(-50%);
+
+    } */
 
 @media (min-width: 800px) {
 
 .home-section__content {
-      top: 35%
+      top: 25%
+  }
+  }
+
+@media (min-width: 1010px) {
+
+.home-section__content {
+      top: 30%
   }
   }
 
@@ -555,21 +568,21 @@ li {
 @media (min-width: 530px) {
 
 .home-section__content__logo {
-        width: 300px
+        width: 250px
     }
   }
 
 @media (min-width: 800px) {
 
 .home-section__content__logo {
-        width: 500px
+        width: 300px
     }
   }
 
 @media (min-width: 1010px) {
 
 .home-section__content__logo {
-        width: 500px
+        width: 400px
     }
   }
 
@@ -616,6 +629,7 @@ li {
   /* background: url('/assets/images/about1.jpg') no-repeat  0 center fixed; */
   /* background-size: cover; */
   background-color: white;
+  overflow: hidden;
 }
 
 .about__content {
@@ -736,8 +750,6 @@ li {
   overflow-y: hidden;
   max-width: 980px;
   margin: auto;
-
-
 }
 
 .elagage .scrolling-wrapper .card {
@@ -860,6 +872,42 @@ li {
     max-width: 980px;
     margin: auto;
     padding: 0 8px;
+    //background: red;
+
+  }
+
+.entretien .scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 980px;
+  margin: auto;
+  }
+
+.entretien .scrolling-wrapper .card {
+    flex: 0 0 auto;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+.entretien .scrolling-wrapper .card img{
+      height: 10rem;
+      border-radius: 0.5rem;
+    }
+
+@media (min-width: 530px) {
+
+.entretien .scrolling-wrapper .card img{
+        height: 10rem
+    }
+  }
+
+@media (min-width: 1010px) {
+
+.entretien .scrolling-wrapper .card img{
+        height: 13rem
+    }
   }
 
 .entretien p {
@@ -949,18 +997,13 @@ li {
   opacity: 0;
 }
 
-@media (min-width: 800px) {
-
-.reveal-item{
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15)
-}
-  }
+/* @mixin atMedium{
+    transform: scale(1.15);
+  } */
 
 .reveal-item--is-visible{
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    //transform: scale(1);
     transition: all 1.5s ease-in;
 
   }

@@ -2,6 +2,7 @@
   /* background: url('/assets/images/about1.jpg') no-repeat  0 center fixed; */
   /* background-size: cover; */
   background-color: white;
+  overflow: hidden;
 
   &__content {
     max-width: 980px;

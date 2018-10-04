@@ -7,8 +7,37 @@
     max-width: 980px;
     margin: auto;
     padding: 0 8px;
+    //background: red;
+
   }
 
+  .scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 980px;
+  margin: auto;
+
+  .card {
+    flex: 0 0 auto;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+
+    img{
+      height: 10rem;
+      border-radius: 0.5rem;
+
+      @mixin atSmall {
+        height: 10rem;
+      }
+
+      @mixin atLarge {
+        height: 13rem;
+      }
+    }
+  }
+  }
   p {
     font-family: $fontLobsterTwo;
     font-weight: bold;
