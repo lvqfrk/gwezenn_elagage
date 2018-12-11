@@ -75,13 +75,13 @@
       @mixin atMedium {
         display: block;
         margin-right: 2rem;
-        margin-top: 5px;
+        margin-top: 2px;
         li {
           display: inline;
           a {
             color: white;
             font-family: $fontLobsterTwo;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-left: 1rem;
 
             &.is-current-link{

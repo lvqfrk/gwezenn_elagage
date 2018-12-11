@@ -11,6 +11,8 @@ class MobileMenu {
 
   events() {
     this.menuBtnView.click(this.toggleMenu.bind(this));
+    // Work In Progress
+    this.menuContent.click(this.toggleMenu.bind(this));
   }
 
   toggleMenu() {

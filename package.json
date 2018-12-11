@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "jquery-parallax": "^1.0.1",
+    "natives": "^1.1.6",
     "normalize.css": "^8.0.0",
     "parallax-imagescroll": "^0.2.3",
     "scrollmagic": "^2.0.5",
@@ -16,7 +17,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.24.1",
     "bable-loader": "0.0.1-security",
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.1",
     "gulp-watch": "^5.0.0",

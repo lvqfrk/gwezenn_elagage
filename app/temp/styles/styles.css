@@ -416,6 +416,12 @@ li {
       display: inline-block;
     }
 
+.icons {
+  width: 3rem;
+  margin-left: 0.5rem;
+  float: left;
+}
+
 .header {
   position: fixed;
   z-index: 2;
@@ -504,7 +510,7 @@ li {
 .header__content__navbar {
         display: block;
         margin-right: 2rem;
-        margin-top: 5px
+        margin-top: 2px
     }
         .header__content__navbar li {
           display: inline;
@@ -512,7 +518,7 @@ li {
           .header__content__navbar li a {
             color: white;
             font-family: 'Lobster Two', cursive;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-left: 1rem;
           }
 
@@ -940,35 +946,17 @@ li {
 .contact {
   padding-top: 4rem;
   padding-bottom: 5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   background: black;
 }
 
 .contact p {
     font-family: 'Lobster Two', cursive;
     font-weight: bold;
-    text-align: center;
     color: white;
-  }
 
-@media (min-width: 530px) {
 
-.contact p {
-      font-size: 1.2rem
-  }
-  }
-
-@media (min-width: 800px) {
-
-.contact p {
-      font-size: 1.3rem
-  }
-  }
-
-@media (min-width: 1010px) {
-
-.contact p {
-      font-size: 1.5rem
-  }
   }
 
 .contact__content {
@@ -977,19 +965,40 @@ li {
   }
 
 .contact__content__col {
-      text-align: center;
-      width: 50%;
+
+      width: 100%;
       float: left;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
     }
 
 .contact__content__col img {
         max-width: 180px;
+
+      }
+
+.contact__content__col__legal {
+        text-align: center;
+      }
+
+@media (min-width: 800px) {
+
+.contact__content__col__legal {
+          font-size: 1.5rem
+      }
+  }
+
+.contact__content__col__info {
+        line-height: 3rem;
+        margin-left: 1.5rem;
+        display: inline;
+        font-size: 1.5rem;
       }
 
 @media (min-width: 800px) {
 
 .contact__content__col {
-        width: 25%
+        width: 50%
     }
   }
 

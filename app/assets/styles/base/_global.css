@@ -60,5 +60,10 @@ li {
       display: inline-block;
     }
   }
+}
 
+.icons {
+  width: 3rem;
+  margin-left: 0.5rem;
+  float: left;
 }

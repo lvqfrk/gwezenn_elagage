@@ -1,42 +1,53 @@
 .contact {
   padding-top: 4rem;
   padding-bottom: 5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   background: black;
+
 
   p {
     font-family: $fontLobsterTwo;
     font-weight: bold;
-    text-align: center;
     color: white;
 
-    @mixin atSmall {
-      font-size: 1.2rem;
-    }
 
-    @mixin atMedium {
-      font-size: 1.3rem;
-    }
-
-    @mixin atLarge {
-      font-size: 1.5rem;
-    }
   }
 
   &__content {
     max-width: 980px;
     margin: auto;
 
+
     &__col {
-      text-align: center;
-      width: 50%;
+
+      width: 100%;
       float: left;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
 
       img {
         max-width: 180px;
+
+      }
+
+      &__legal {
+        text-align: center;
+
+        @mixin atMedium {
+          font-size: 1.5rem;
+        }
+      }
+
+      &__info {
+        line-height: 3rem;
+        margin-left: 1.5rem;
+        display: inline;
+        font-size: 1.5rem;
       }
 
       @mixin atMedium {
-        width: 25%;
+        width: 50%;
       }
     }
   }
