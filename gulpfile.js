@@ -101,7 +101,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function(){
     .pipe(gulp.dest("./docs/assets/images"));
 });
 
-gulp.task('usemin', ['deleteDistFolder'], function() {
+gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'], function() {
   return gulp.src("./app/index.html")
     .pipe(usemin({
       css: [function() {return rev()}, function() {return cssnano()}],
