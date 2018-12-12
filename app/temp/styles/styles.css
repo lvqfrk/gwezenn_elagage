@@ -739,8 +739,10 @@ li {
 
 .elagage {
     /* remove ../.. for real build */
-    background: url('../../assets/images/elagage_background.jpeg') no-repeat 0 center fixed
 }
+    .elagage.lazyloaded{
+      background: url('../../assets/images/elagage_background.jpeg') no-repeat 0 center fixed;
+    }
   }
 
 .elagage__content {
@@ -823,8 +825,10 @@ li {
 
 .abattage {
     /* remove ../.. for real build */
-    background: url('../../assets/images/abattage_background.jpeg') no-repeat 0 center fixed
 }
+    .abattage.lazyloaded {
+      background: url('../../assets/images/abattage_background.jpeg') no-repeat 0 center fixed;
+    }
   }
 
 .abattage__content {

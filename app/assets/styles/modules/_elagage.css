@@ -2,7 +2,9 @@
   background: $colorMaroon;
   @mixin atMedium {
     /* remove ../.. for real build */
-    background: url('../../assets/images/elagage_background.jpeg') no-repeat 0 center fixed;
+    &.lazyloaded{
+      background: url('../../assets/images/elagage_background.jpeg') no-repeat 0 center fixed;
+    }
   }
   //background: $colorMaroon;
   color: white;
