@@ -1,7 +1,8 @@
 .elagage {
   background: $colorMaroon;
   @mixin atMedium {
-    background: url('/assets/images/elagage_background.jpeg') no-repeat 0 center fixed;
+    /* remove ../.. for real build */
+    background: url('../../assets/images/elagage_background.jpeg') no-repeat 0 center fixed;
   }
   //background: $colorMaroon;
   color: white;

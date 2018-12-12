@@ -7,7 +7,13 @@ nested = require('postcss-nested'),
 cssimport = require('postcss-import'),
 mixins = require('postcss-mixins'),
 browserSync = require('browser-sync').create()
-webpack = require('webpack');
+webpack = require('webpack'),
+imagemin = require('gulp-imagemin'),
+del = require('del')
+usemin = require('gulp-usemin'),
+rev = require('gulp-rev'),
+cssnano = require('gulp-cssnano')
+uglify = require('gulp-uglify');
 
 /**
  * Compile css.
@@ -65,4 +71,44 @@ gulp.task('scripts', function(callback) {
 
 gulp.task('scriptsRefresh', ['scripts'], function() {
   browserSync.reload();
-})
+});
+
+
+// --- BUILD PART ---
+
+gulp.task('previewDist', function() {
+  browserSync.init({
+    server: {
+      // change this to dist for real build
+      baseDir: "docs"
+    }
+  });
+});
+
+gulp.task('deleteDistFolder', function(){
+  // change this to dist for real build
+  return del("./docs");
+});
+
+gulp.task('optimizeImages', ['deleteDistFolder'], function(){
+  return gulp.src(['./app/assets/images/*'])
+    .pipe(imagemin({
+      progressive: true,
+      interlaced: true,
+      multipass: true
+    }))
+    // change this to dist for real build
+    .pipe(gulp.dest("./docs/assets/images"));
+});
+
+gulp.task('usemin', ['deleteDistFolder'], function() {
+  return gulp.src("./app/index.html")
+    .pipe(usemin({
+      css: [function() {return rev()}, function() {return cssnano()}],
+      js: [function() {return rev()}, function() {return uglify()}]
+    }))
+    // change this to dist for real build
+    .pipe(gulp.dest("./docs"));
+});
+
+gulp.task('build', ['deleteDistFolder','optimizeImages', 'usemin']);
