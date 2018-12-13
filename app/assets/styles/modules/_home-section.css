@@ -14,12 +14,6 @@
       top: 200px;
     }
 
-    /* @mixin atSmall640 {
-      top: 35%;
-      transform: translateY(-50%);
-
-    } */
-
     @mixin atMedium {
       top: 25%;
     }
@@ -27,7 +21,6 @@
     @mixin atLarge {
       top: 30%;
     }
-
 
     &__logo {
       width: 250px;
